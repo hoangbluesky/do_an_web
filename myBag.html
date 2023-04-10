@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/product.css">
+    <link rel="stylesheet" href="./asset/css/homePage.css">
+    <link rel="stylesheet" href="./asset/font/fontawesome-free-6.1.1/css/all.css">
+    <link rel="stylesheet" href="./asset/css/grid.css">
+    <link rel="stylesheet" href="./asset/css/myBag.css">
+    <title>Giỏ Hàng</title>
+</head>
+
+<body>
+    <header id="header" style="background-color: #ffde59">
+        <div class="header_items">
+            <!-- logo -->
+            <div class="header_items_logo" style="margin-left: 50px;">
+                <img src="./asset/img/logo2.PNG" alt="" style="width: 160px;">
+            </div>
+            <!-- navigation -->
+            <div class="header_items_navigative">
+                <div class="navigative_items">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <a href="./homePage.html">Trang Chủ</a>
+                </div>
+                <div class="navigative_items">
+                    <i class="fa-solid fa-bell"></i>
+                    <a href="">Thông Báo</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="navigative_items" id="nav_them">
+
+            <label for="nav-mobile_input" href=""><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" hidden name="checkbox" id="nav-mobile_input" class="nav-input">
+            <nav class="nav_list">
+                <div class="header_items_logo" style="padding-left: 10px; background-color: #ffde59;">
+                    <img src="./asset/img/logo2.PNG" alt="" style="width: 160px;">
+                </div>
+                <ul class="nav_list-mobile">
+                    <li>
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <a href="" class="nav-mobile_link">Trang Chủ</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        <a href="" class="nav-mobile_link">Đăng Nhập</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bell"></i>
+                        <a href="" class="nav-mobile_link">Thông Báo</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check-to-slot"></i>
+                        <a href="" class="nav-mobile_link">Đăng Tin</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <a href="" class="nav-mobile_link">Đăng Xuất</a>
+                    </li>
+                </ul>
+            </nav>
+            <label for="nav-mobile_input" class="overlay"></label>
+        </div>
+
+        <!-- tìm kiếm -->
+        <div class="header_items">
+            <div class="header_items_input">
+                <div style="width: 80%;">
+                    <input type="text" placeholder="Tìm kiếm trên Xe Tốt" id="search_homePage"
+                        style="width: 100%; padding: 0;">
+                </div>
+                <div>
+                    <button id="button_search_homPage"
+                        style="border: none; width: 100%; height: 100%; background-color: aliceblue;"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <!-- đăng nhập - post status-->
+            <div class="header_items_login">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <a href="./loginPage.html" style="text-decoration: none;">Đăng Nhập</a>
+            </div>
+            <div class="header_items_status">
+                <i class="fa-solid fa-check-to-slot"></i>
+                <a href="./storyPage.html" style="text-decoration: none;">Đăng Tin</a>
+            </div>
+        </div>
+    </header>
+    <div class="back">
+        <a href="./product.html">
+            <i class="fa-solid fa-angles-left"></i>
+            <p>Trở về</p>
+        </a>
+    </div>
+    <main style="margin-top: 1px;" class="grid wide col l-12">
+        <div class="container_myBag col l-12">
+            <div class="container_myBag-content-left col l-9">
+                <div class="left_header col l-12">
+                    <div class="l-5">
+                        <input type="checkbox" name="" id="all">
+                        Tất cả
+                    </div>
+                    <div class="l-2">Đơn giá</div>
+                    <div class="l-2">Số lượng</div>
+                    <div class="l-2">Thành tiền</div>
+                    <div class="l-1">
+                        <a style="padding: 10px;">
+                            <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/trash.svg"
+                                alt="deleted">
+                        </a>
+                    </div>
+                </div>
+                <div class="left_content col l-12">
+                    <div class="myBag_product row">
+                        <div class="myBag_product-info l-5">
+                            <input type="checkbox" name="" id="">
+                            <img src="./asset/img/ab.png" alt="">
+                            <p>Xe Ari Black 2020</p>
+                        </div>
+                        <div class="l-2">
+                            <p>56.000.000VND</p>
+                        </div>
+                        <div class="l-2">
+                            <input type="number" name="" class="soluong" id="pr1" min="0">
+                        </div>
+                        <div class="l-2">
+
+                        </div>
+                        <div class="l-1">
+                            <a style="padding: 10px;">
+                                <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/trash.svg"
+                                    alt="deleted" style="margin-top: 10px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="myBag_product row">
+                        <div class="myBag_product-info l-5">
+                            <input type="checkbox" name="" id="">
+                            <img src="https://cdn.honda.com.vn/motorbikes/May2022/LKpqUNRq9Nrd7KeXyeZD.png" alt="">
+                            <p>VinFast</p>
+                        </div>
+                        <div class="l-2">
+                            <p>425.000.000VND</p>
+                        </div>
+                        <div class="l-2">
+                            <input type="number" name="" class="soluong" id="pr2" min="0">
+                        </div>
+                        <div class="l-2">
+
+                        </div>
+                        <div class="l-1">
+                            <a style="padding: 10px;">
+                                <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/trash.svg"
+                                    alt="deleted" style="margin-top: 10px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="myBag_product row">
+                        <div class="myBag_product-info l-5">
+                            <input type="checkbox" name="" id="">
+                            <img src="./asset/img/winner.jpg" alt="">
+                            <p>Winner</p>
+                        </div>
+                        <div class="l-2">
+                            <p>45.490.000VND</p>
+                        </div>
+                        <div class="l-2">
+                            <input type="number" name="" class="soluong" id="pr3" min="0">
+                        </div>
+                        <div class="l-2">
+
+                        </div>
+                        <div class="l-1">
+                            <a style="padding: 10px;">
+                                <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/trash.svg"
+                                    alt="deleted" style="margin-top: 10px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="myBag_product row">
+                        <div class="myBag_product-info l-5">
+                            <input type="checkbox" name="" id="">
+                            <img src="./asset/img/vision.jpg" alt="">
+                            <p>Vision</p>
+                        </div>
+                        <div class="l-2">
+                            <p>30.000.000VND</p>
+                        </div>
+                        <div class="l-2">
+                            <input type="number" name="" class="soluong" id="pr4" min="0">
+                        </div>
+                        <div class="l-2">
+
+                        </div>
+                        <div class="l-1">
+                            <a style="padding: 10px;">
+                                <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/trash.svg"
+                                    alt="deleted" style="margin-top: 10px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="myBag_product row">
+                        <div class="myBag_product-info l-5">
+                            <input type="checkbox" name="" id="">
+                            <img src="./asset/img/satria.jpg" alt="">
+                            <p>Satria</p>
+                        </div>
+                        <div class="l-2">
+                            <p>56.990.000VND</p>
+                        </div>
+                        <div class="l-2">
+                            <input type="number" name="" class="soluong" id="pr5" min="0">
+                        </div>
+                        <div class="l-2">
+
+                        </div>
+                        <div class="l-1">
+                            <a style="padding: 10px;">
+                                <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/trash.svg"
+                                    alt="deleted" style="margin-top: 10px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_myBag-content-right col l-3">
+                <div class="right_header col l-12">
+                    <div class="right_header-1">
+                        <p>Giao tới</p>
+                        <a href="" style="margin: auto 0;">Thay đổi</a>
+                    </div>
+                    <div class="right_header-2">
+                        <p>Phạm Như Quốc Bảo</p>
+                        <p>sđt: 0326495191</p>
+                    </div>
+                    <div class="right_header-3">
+                        <p>24 Mai Anh Tuấn, Hoà Xuân, Cẩm Lệ, Đà Nẵng</p>
+                    </div>
+                </div>
+                <div class="right_content">
+                    <div class="right_content-1">
+                        <div class="">
+                            <p>Tạm tính</p>
+                            <p id="money1" class="money cal-money">
+                                .000Đ
+                            </p>
+                        </div>
+                        <div class="">
+                            <p>Giảm giá</p>
+                            <input type="text" class="money" name="" id="money2" value="0">
+                        </div>
+                        <div class="">
+                            <p>Phí ship</p>
+                            <input type="text" class="money" name="" id="money3" value="45.000">
+                        </div>
+                    </div>
+                    <div class="right_content-2">
+                        <div class="">
+                            <p>Tổng tiền</p>
+                            <p id="total" class="money cal-money">
+                                .000Đ
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="right_footer">
+                    <button class="button" id="btn-buy" onclick="cal()">Mua hàng</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <div class="footer">
+        <div class="grid">
+            <div class="row">
+                <div class="col l-3 m-6 c-12 ">
+                    <h3 class="footer_head">Tải ứng dụng xe tốt</h3>
+                    <ul class="footer_list">
+                        <li class="footer_list-item">
+                            <img src="./asset/img/footerLogo.webp" alt="" class="footer_qrcode">
+                        </li>
+                        <li class="footer_list-item">
+                            <ul class="footer_list-apps">
+                                <li class="footer-app">
+                                    <img src="./asset/img/appstore.svg" alt="">
+                                </li>
+                                <li class="footer-app">
+                                    <img src="./asset/img/ggplace.svg" alt="">
+                                </li>
+                                <li class="footer-app">
+                                    <img src="./asset/img/appgallery.webp" alt="">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col l-3 m-6 c-12 ">
+                    <h3 class="footer_head">Hỗ trợ khách hàng</h3>
+                    <ul class="footer_info">
+                        <li class="footer_info-help">
+                            Trung tâm trợ giúp
+                        </li>
+                        <li class="footer_info-help">
+                            An toàn mua bán
+                        </li>
+                        <li class="footer_info-help">
+                            Quy định cần thiết
+                        </li>
+                        <li class="footer_info-help">
+                            Quy chế quyền riêng tư
+                        </li>
+                        <li class="footer_info-help">
+                            Liên hệ hỗ trợ
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col l-2 m-6 c-12 ">
+                    <h3 class="footer_head">Tải ứng dụng xe tốt</h3>
+                    <ul class="footer_info">
+                        <li class="footer_info-help">
+                            Giới thiệu
+                        </li>
+                        <li class="footer_info-help">
+                            Tuyển dụng
+                        </li>
+                        <li class="footer_info-help">
+                            Truyền thông
+                        </li>
+                        <li class="footer_info-help">
+                            Blog
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col l-3 m-6 c-12 ">
+                    <h3 class="footer_head">Tải ứng dụng xe tốt</h3>
+                    <ul class="footer_links">
+                        <li class="footer_socials">
+                            <div class="social_media">
+                                <img src="./asset/img/facebook.svg" alt="" class="social_media-access">
+                                <img src="./asset/img/youtube.svg" alt="" class="social_media-access">
+                                <img src="./asset/img/likein.svg" alt="" class="social_media-access">
+                            </div>
+                        </li>
+
+                        <li class="footer_socials">
+                            <img src="./asset/img/dadangky.webp" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./asset/js/myBag.js"></script>
+</body>
+
+</html>
